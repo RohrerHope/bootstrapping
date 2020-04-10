@@ -19,15 +19,36 @@
   </head>
 
   <body>
-    <article class="container">
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+      <a href="/" class="navbar-brand">Whiskey Drop</a>
+      <ul class="navbar-nav mr-auto">
+        <li class="active nav-item mr-2">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a href="/about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item mr-2 d-block d-sm-none">
+          <a href="/login" class="nav-link">Sign In / Sign Up</a>
+        </li>
+      </ul>
+      <div class="d-none d-md-block">
+        <p class="navbar-text my-auto mr-2">
+          <i>Great whiskey delivered to your door!</i>
+        </p>
+        <a href="/login">Sign In / Sign Up</a>
+      </div>
+    </nav>
+    <article class="container mt-3">
       <!-- Callout -->
       <div class="row">
         <div class="col-12">
-          <section class="callout">
+          <section class="callout jumbotron text-center">
             <h1>The finest whiskeys delivered to your doorstep.</h1>
             <p class="lead">
               Sign up today to start receiving the world's best whiskeys every
-              month. <s>€19.99</s>
+              month. <s class="d-none d-sm-inline">€19.99</s>
+              <span class="d-inline d-sm-none"><br /></span>
               <strong><mark>First one is free!</mark></strong>
             </p>
             <button class="btn btn-success btn-lg">Sign Up!</button>
@@ -46,7 +67,7 @@
       <!-- Quotes -->
       <section class="quotes">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 my-5">
             <h2 class="text-uppercase">Quotes:</h2>
           </div>
         </div>
@@ -74,7 +95,7 @@
       <!-- Features -->
       <section class="features">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 my-5">
             <h2 class="text-uppercase">Features:</h2>
           </div>
         </div>
@@ -122,73 +143,77 @@
 
       <!-- Top whiskeys -->
       <section class="whiskeys">
-        <div class="col-12">
-          <h2 class="text-uppercase">Top 5 Whiskeys:</h2>
+        <div class="row">
+          <div class="col-12 my-5">
+            <h2 class="text-uppercase">Top 5 Whiskeys:</h2>
+          </div>
         </div>
-        <div class="col-12">
-          <div class="table table-responsive table-hover">
-            <table>
-              <tr>
-                <th>Name</th>
-                <th>Origin</th>
-                <th>Wiki Page</th>
-              </tr>
-              <tr>
-                <td>Nikka</td>
-                <td>Japan</td>
-                <td>
-                  <a
-                    href="https://en.wikipedia.org/wiki/Nikka_Whisky_Distilling"
-                    target="_blank"
-                    >Nikka Whisky Distilling</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Hibiki</td>
-                <td>Japan</td>
-                <td>
-                  <a
-                    href="https://en.wikipedia.org/wiki/Hibiki_(whisky)"
-                    target="_blank"
-                    >Hibiki (whisky)</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Yamazaki</td>
-                <td>Japan</td>
-                <td>
-                  <a
-                    href="https://en.wikipedia.org/wiki/Yamazaki_distillery"
-                    target="_blank"
-                    >Yamazaki distillery</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Kavalan</td>
-                <td>Taiwan</td>
-                <td>
-                  <a
-                    href="https://en.wikipedia.org/wiki/Kavalan_Distillery"
-                    target="_blank"
-                    >Kavalan Distillery</a
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>Amrut</td>
-                <td>India</td>
-                <td>
-                  <a
-                    href="https://en.wikipedia.org/wiki/Amrut_(whisky)"
-                    target="_blank"
-                    >Amrut (whisky)</a
-                  >
-                </td>
-              </tr>
-            </table>
+        <div class="row">
+          <div class="col-12">
+            <div class="table table-responsive table-hover">
+              <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Origin</th>
+                  <th>Wiki Page</th>
+                </tr>
+                <tr>
+                  <td>Nikka</td>
+                  <td>Japan</td>
+                  <td>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Nikka_Whisky_Distilling"
+                      target="_blank"
+                      >Nikka Whisky Distilling</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hibiki</td>
+                  <td>Japan</td>
+                  <td>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Hibiki_(whisky)"
+                      target="_blank"
+                      >Hibiki (whisky)</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Yamazaki</td>
+                  <td>Japan</td>
+                  <td>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Yamazaki_distillery"
+                      target="_blank"
+                      >Yamazaki distillery</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kavalan</td>
+                  <td>Taiwan</td>
+                  <td>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Kavalan_Distillery"
+                      target="_blank"
+                      >Kavalan Distillery</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Amrut</td>
+                  <td>India</td>
+                  <td>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Amrut_(whisky)"
+                      target="_blank"
+                      >Amrut (whisky)</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </section>
