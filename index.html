@@ -16,67 +16,77 @@
       integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Whiskey Drop | Taste a new whiskey every month</title>
   </head>
 
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-      <a href="/" class="navbar-brand">Whiskey Drop</a>
-      <button
-        class="navbar-toggler ml-auto"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav mr-auto">
-          <li class="active nav-item mr-2">
-            <a href="/" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item mr-2">
-            <a href="/about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Whiskeys</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a href="#" class="dropdown-item">Irish</a>
-              <a href="#" class="dropdown-item">Scotch</a>
-              <a href="#" class="dropdown-item">Japanese</a>
-              <a href="#" class="dropdown-item">American</a>
-            </div>
-          </li>
-          <li class="nav-item mr-2 d-block d-sm-none">
-            <a href="/login" class="nav-link">Sign In / Sign Up</a>
-          </li>
-        </ul>
-      </div>
-      <div class="d-none d-md-block">
-        <p class="navbar-text my-auto mr-2">
-          <i>Great whiskey delivered to your door!</i>
-        </p>
-        <a href="/login">Sign In / Sign Up</a>
-      </div>
-    </nav>
+    <div class="container-fluid navalert-container">
+      <nav class="navbar navbar-dark navbar-expand-sm">
+        <a href="/" class="navbar-brand">Whiskey Drop</a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item mr-2">
+              <a href="/about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Whiskeys</a
+              >
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a href="#" class="dropdown-item">Irish</a>
+                <a href="#" class="dropdown-item">Scotch</a>
+                <a href="#" class="dropdown-item">Japanese</a>
+                <a href="#" class="dropdown-item">American</a>
+              </div>
+            </li>
+            <li class="nav-item mr-2 d-block d-sm-none">
+              <a href="/login" class="nav-link">Sign In / Sign Up</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block">
+          <p class="navbar-text my-auto mr-2">
+            <i>Great whiskey delivered to your door!</i>
+          </p>
+          <a href="/login">Sign In / Sign Up</a>
+        </div>
+      </nav>
+    </div>
     <!-- /. navigation bar -->
 
     <!-- Body Content -->
-    <article class="container mt-3">
-      <!-- Sales Warning -->
+    <!-- Sales Warning -->
+    <!-- <div class="container alert-container">
       <div class="row d-none d-sm-block">
         <div class="col-12">
           <div class="alert alert-warning">
@@ -86,13 +96,19 @@
           </div>
         </div>
       </div>
-      <!-- /. sales warning -->
+    </div> -->
+    <!-- /. sales warning -->
 
-      <!-- Callout -->
+    <!-- Callout -->
+    <div class="container-fluid callout-container">
+      <div class="opaque-overlay">&nbsp;</div>
       <div class="row">
         <div class="col-12">
           <section class="callout jumbotron text-center">
-            <h1>The finest whiskeys delivered to your doorstep.</h1>
+            <h1 class="jumbotron-header">
+              The finest whiskeys delivered to your doorstep.
+            </h1>
+            <hr class="block-divider block-divider--orange" />
             <p class="lead">
               Sign up today to start receiving the world's best whiskeys every
               month. <s class="d-none d-sm-inline">€19.99</s>
@@ -100,7 +116,7 @@
               <strong><mark>First one is free!</mark></strong>
             </p>
             <button
-              class="btn btn-success btn-lg"
+              class="btn btn-lg btn--cta btn--red"
               data-toggle="modal"
               data-target="#signUpModal"
             >
@@ -115,10 +131,11 @@
           </section>
         </div>
       </div>
-      <!-- /.callout -->
-      <hr />
+    </div>
+    <!-- /.callout -->
 
-      <!-- Quotes -->
+    <!-- Quotes -->
+    <div class="container quotes-container">
       <section class="quotes">
         <!-- Quotes header -->
         <div class="row">
@@ -178,9 +195,10 @@
         </div>
       </section>
       <!-- /.quotes -->
-      <hr />
+    </div>
 
-      <!-- Features -->
+    <!-- Features -->
+    <div class="container features-container">
       <section class="features">
         <!-- Features Header -->
         <div class="row">
@@ -245,9 +263,10 @@
         </div>
       </section>
       <!-- /.features -->
-      <hr />
+    </div>
 
-      <!-- Top whiskeys -->
+    <!-- Top whiskeys -->
+    <div class="container whiskeys-container">
       <section class="whiskeys">
         <!-- Top Whiskeys Header -->
         <div class="row">
@@ -328,8 +347,8 @@
         </div>
         <!-- /. table of top whiskeys -->
       </section>
-      <!-- /.top whiskeys -->
-    </article>
+    </div>
+    <!-- /.top whiskeys -->
     <!-- /. body content -->
 
     <!-- Sign Up Modal -->
